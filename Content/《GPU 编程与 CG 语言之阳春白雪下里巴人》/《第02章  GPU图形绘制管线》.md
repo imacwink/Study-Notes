@@ -167,7 +167,7 @@
  　　Z 值并非真正的笛卡尔空间坐标系中的欧几德得距离（Euclidean distance），而是一种“顶点到视点距离”的相对度量。所谓相对度量，即这个值保留了与其他同类型值得相对大小关系。在 Steve Baker 撰写的文章“Learning to love your Z-buffer”中将 GPU 对 Z 值得计算公式描述为：
 <br><br>
  　　z_buffer_value = (1<<N)*(a*z + b)/z <br>
- 　　a = f/(f - n) 
+ 　　a = f/(f - n)<br> 
  　　b = f * n/(n - f)  
 <br> 
  　　其中 f 表示视点到远裁剪面的空间距离，n 表示视点到近裁剪面的空间距离，z 表示视点到顶点的空间距离，N 表示 Z 值精度。
