@@ -47,7 +47,10 @@
 <br><br>
 　　根据顶点坐标变换的先后顺序，主要有如下几个坐标空间，或者说坐标类型：Object space，模型坐标空间；World space，世界坐标空间；Eye space，观察者坐标空间；Clip and Project space，屏幕坐标空间。图 3 表述了 GPU 的整个处理流程，其中茶色区域所展示的就是顶点坐标空间的变换流程。大家从中只需得到一个大概的流程顺序即可，下面将详细阐述空间变换的每个独立阶段。
 <br><br>
+![](res/图3.png)
+<br>
 
+#### 2.1.1 从 Object space 到 World space
 
 
 
