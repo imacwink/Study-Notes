@@ -75,8 +75,13 @@
 <br><br>
 ![](res/图4.png)
 <br>
-  
-  
+
+#### 2.1.3 从 Eye Space 到 Project and Clip Space
+
+　　Once positions are in eye space, the next step is to determine what postions are actually viewable in the image you eventually intend trend.【3】
+<br><br>
+　　即：一旦顶点坐标被转换到 Eye Space 中，就需要判断哪些点是视点可见的。位于 Viewing Frustum 梯形体以内的顶点，被认定为可见，而超出这个梯形体以外的场景数据，会被视点去除（Frustum Culling，也称之为视锥裁剪）。这一步通常称之为“Clip（裁剪）”，识别指定区域内或区域外的图形部分的过程称之为裁剪算法。
+<br><br>
   
   
   
