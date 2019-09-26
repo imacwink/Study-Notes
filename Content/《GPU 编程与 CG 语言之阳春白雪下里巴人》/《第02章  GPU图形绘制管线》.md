@@ -131,9 +131,10 @@
 
  　　Pixel Operation 又称为 Raster Operation （在文献【2】中是使用 Raster Operation），是在更新帧缓存之前，执行最后一系列针对每个片段的操作，其目的是：计算出每个像素的颜色值。在这个阶段，被遮挡面通过一个被称为深度测试的过程而消除，这其中包含了很多种计算颜色的方法以及技术。Pixel Operation 包含哪些事情呢？
 <br><br>
- 　　1. 消除遮挡面
- 　　2. Texture Operation，纹理操作，也就是根据像素的纹理坐标，查询对应的纹理值；
- 　　3. Blending；
+ 　　1. 消除遮挡面；<br>
+ 　　2. Texture Operation，纹理操作，也就是根据像素的纹理坐标，查询对应的纹理值；<br>
+ 　　3. Blending；<br>
+ 　　混色
 
 
 
