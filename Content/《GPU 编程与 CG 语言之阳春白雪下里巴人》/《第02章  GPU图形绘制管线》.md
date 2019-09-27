@@ -185,6 +185,8 @@
  　　Z 精度之所以重要，是因为 Z 值决定了物体之间的相互遮挡关系，如果没有足够的精度，则两个相距很近的物体将会出现随机遮挡的现象，这种现象通常称为“flimmering” 或 “Z-fighting”。
 <br>
 #### 2.4.3 Stencil Buffer
+
+ 　　A stencil buffer is an extra buffer, in addition to the color buffer and depth buffer found on modern computer graphics hardware. The buffer is per pixel, and works on integer values, ususlly with a depth of one byte per pixel.
 #### 2.4.4 Frame Buffer
 
 ### 2.5 本章小节
