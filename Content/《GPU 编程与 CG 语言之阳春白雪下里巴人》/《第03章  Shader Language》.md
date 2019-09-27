@@ -3,7 +3,7 @@
 
 > 我们全都要从前辈和同辈学习到一些东西。就连最大的天才，如果想单凭他所特有的内在自我去对付一切，他也决不会有多大成就。<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　------ 歌德
-<br>
+
 　　In the last year I have never had to write a single HLSL/GLSL shader. Bottom line, I can't think of any reason NOT to use CG.
 <br>
 <br>
