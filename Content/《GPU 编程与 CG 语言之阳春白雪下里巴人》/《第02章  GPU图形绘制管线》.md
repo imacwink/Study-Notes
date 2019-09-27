@@ -193,6 +193,13 @@
 
 #### 2.4.4 Frame Buffer
 
+ 　　A framebuffer is a video output device that drives a video display a video display from a memory buffer containing a complete frame of data. The infomation in the buffer typically consists of color values for every pixel on the screen. Color values are commonly stored in 1-bit monochrome, 4-bit palettized, 8-bit palettized, 16-bit highcolor and 24-bit truecolor formats. An additional alpha channel is sometimes used to retain information about pixel transparency. The total amount of the memory required to drive the framebuffer depends on the resolution of the output signal, and on the color depth and palette size. 
+<br><br>
+ 　　Frame buffer，称为帧缓冲区，用于存放显示输出的数据，这个 Buffer 中的数据一般是像素颜色值。Frame buffer 有时也被认为是 color buffer（颜色缓冲区）和 Z buffer 的组合？在 WebMediaBrands 网站上摘录了一段英文说明，即 frame buffer 通常都是在显卡上，但是有时显卡会集成到主板上，所以这种情况下 frame buffer 被放在内存区域（general main memory）。
+<br><br>
+ 　　Frame buffer:The portion of memory reserved for holding the complete bit-mapped image that is sent to the monitor. Typically the frame buffer is stored in the memory chios on the video adapter. In some instances, however, the video chipset is intergrated into the motherboard design, and the frame buffer is stored in general main memory.
+<br>
+
 ### 2.5 本章小节
 
  　　本章介绍了 GPU 图形绘制管线，并对相关的图形硬件进行了阐述。图形绘制管线是 GPU 编程的基础，事实上顶点着色程序和片段着色程序正是按照图形绘制管线而划分的。
