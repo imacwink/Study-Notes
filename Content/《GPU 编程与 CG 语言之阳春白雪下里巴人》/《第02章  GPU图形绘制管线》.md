@@ -186,7 +186,11 @@
 <br>
 #### 2.4.3 Stencil Buffer
 
- 　　A stencil buffer is an extra buffer, in addition to the color buffer and depth buffer found on modern computer graphics hardware. The buffer is per pixel, and works on integer values, ususlly with a depth of one byte per pixel.
+ 　　A stencil buffer is an extra buffer, in addition to the color buffer and depth buffer found on modern computer graphics hardware. The buffer is per pixel, and works on integer values, ususlly with a depth of one byte per pixel. The depth buffer and stencil buffer often share the same area in the RAM of the graphics hardware.
+<br><br>
+ 　　Stencil buffer,中文翻译为“模板缓冲区”，它是一个额外的 buffer，通常附加到 Z Buffer 中，例如：15 位的 Z Buffer 加上 1 位的 stencil buffer（总共 2 个字节）；或者 24 位的 Z Buffer 加上 8 位的 stencil buffer（总共四个字节）。每个像素对应一个 stencil buffer（其实就是对应一个 Z Buffer）。 Z Buffer 和 stencil buffer 通常在显存中共享同一片区域。Stencil buffer 对大部分人而言应该比较陌生，这是一个用来“做记号”的 Buffer，例如：在一个像素的 stencil buffer 中存放 1，表示该像素对应的空间点处于阴影体（shadow volume）中。
+<br>
+
 #### 2.4.4 Frame Buffer
 
 ### 2.5 本章小节
