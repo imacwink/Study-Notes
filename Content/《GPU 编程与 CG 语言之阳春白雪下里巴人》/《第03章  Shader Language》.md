@@ -87,7 +87,11 @@
 <br><br>
 　　其一，Cg 是一个可以被 OpenGL 和 Direct3D 广泛支持的图形处理器编程语言。Cg 语言和 OpenGL、DirectX 并不是同一层次的语言，而是 OpenGL 和 DirectX 的上层，即，Cg 程序是运行在 OpenGL 和 DirectX 标准顶点和像素着色的基础上的；
 <br><br>
-　　其二，Cg 语言是 Microsoft 和 NVIDIA 相互协作在标准硬件光照语言的语法和语义上达成了一致，文献【1】在 1.3.1 节的标题就是“Microsoft and NVIDIA's Collaboration to Develop Cg and HLSL”，所以，HLSL 和 Cg 其实是同一种语言（参见 Cg 教程-可编程实时图形权威指南 29 页的致谢部分）。很多时候，你会发现用 HLSL 写的代码可以直接当中 Cg 代码使用。也就是说，Cg 基于知识联盟（Microsoft 和 NVIDIA），且拥有跨平台性，选择 Cg 语言是大势所趋。有心的读者，可以注意市面上当前的 GPU 编程方面的书籍，大部分是基于 CG 语言的。（附：）
+　　其二，Cg 语言是 Microsoft 和 NVIDIA 相互协作在标准硬件光照语言的语法和语义上达成了一致，文献【1】在 1.3.1 节的标题就是“Microsoft and NVIDIA's Collaboration to Develop Cg and HLSL”，所以，HLSL 和 Cg 其实是同一种语言（参见 Cg 教程-可编程实时图形权威指南 29 页的致谢部分）。很多时候，你会发现用 HLSL 写的代码可以直接当中 Cg 代码使用。也就是说，Cg 基于知识联盟（Microsoft 和 NVIDIA），且拥有跨平台性，选择 Cg 语言是大势所趋。有心的读者，可以注意市面上当前的 GPU 编程方面的书籍，大部分是基于 CG 语言的。（附：Microsoft 和 NVIDIA 联手推出 Cg，应该是一种经济和技术上的双赢，通过这种方式联手打击 GLSL）。
+<br><br>
+　　此外，Cg，即 C for Graphics，用于图形的 C 语言，这其实说明了当时设计人员的一个初衷，就是“让基于图形硬件的编程变得和 C 语言编程一样方便，自由”。正如 C++ 和 Java 的语法是基于 C 的，Cg 语言本身也是基于 C 语言的。如果您使用过 C、C++、Java 其中任意一个，那么 Cg 的语法也是比较容易掌握的。Cg 语言极力保留了 C 语言的大部分语义，力图让开发人员从硬件细节中解脱出来，Cg 同时拥有高级语言的好处，如代码的易重用性，可读性提高等。使用 Cg 还可以实现动画驱动、通用计算（排序、查找）等功能。
+<br><br>
+　　在曾经的一段时间中有一种流言：NVIDIA 将要抛弃 Cg 语言。
 <br>
 
 ### 3.5 本章小结
