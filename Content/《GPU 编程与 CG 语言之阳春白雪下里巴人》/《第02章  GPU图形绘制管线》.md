@@ -200,7 +200,7 @@
  　　Frame buffer:The portion of memory reserved for holding the complete bit-mapped image that is sent to the monitor. Typically the frame buffer is stored in the memory chios on the video adapter. In some instances, however, the video chipset is intergrated into the motherboard design, and the frame buffer is stored in general main memory.
 <br>
 
-### 2.5 本章小节
+### 2.5 本章小结
 
  　　本章介绍了 GPU 图形绘制管线，并对相关的图形硬件进行了阐述。图形绘制管线是 GPU 编程的基础，事实上顶点着色程序和片段着色程序正是按照图形绘制管线而划分的。
 <br><br>
