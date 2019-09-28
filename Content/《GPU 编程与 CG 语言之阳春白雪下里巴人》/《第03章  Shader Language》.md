@@ -59,7 +59,7 @@
 <br><br>
 　　由于 GPU 对数据进行并行处理，所以每个数据都会执行一次 Shader 程序。即，每个顶点数据都会执行一次顶点程序；每个片段都会执行一次片段程序。
 <br><br>
-![](res/图9.png)
+![](res/图10.png)
 <br>
 
 ### 3.3 Fragment Shader Program
