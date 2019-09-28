@@ -87,7 +87,7 @@
 <br><br>
 　　其一，Cg 是一个可以被 OpenGL 和 Direct3D 广泛支持的图形处理器编程语言。Cg 语言和 OpenGL、DirectX 并不是同一层次的语言，而是 OpenGL 和 DirectX 的上层，即，Cg 程序是运行在 OpenGL 和 DirectX 标准顶点和像素着色的基础上的；
 <br><br>
-　　其二，Cg 语言是 Microsoft 和 NVIDIA 相互协作在标准硬件光照语言的语法和语义
+　　其二，Cg 语言是 Microsoft 和 NVIDIA 相互协作在标准硬件光照语言的语法和语义上达成了一致，文献【1】在 1.3.1 节的标题就是“Microsoft and NVIDIA's Collaboration to Develop Cg and HLSL”，所以，HLSL 和 Cg 其实是同一种语言（参见 Cg 教程-可编程实时图形权威指南 29 页的致谢部分）。很多时候，你会发现用 HLSL 写的代码可以直接当中 Cg 代码使用。也就是说，Cg 基于知识联盟（Microsoft 和 NVIDIA），且拥有跨平台性，选择 Cg 语言是大势所趋。有心的读者，可以注意市面上当前的 GPU 编程方面的书籍，大部分是基于 CG 语言的。（附：）
 <br>
 
 ### 3.5 本章小结
