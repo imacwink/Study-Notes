@@ -95,7 +95,7 @@
 <br><br>
 　　我在 OGRE 官方论坛上，搜索过有关使用 Cg 和 HLSL 的讨论帖子，套用其中一个帖子的结尾语来结束本章：<br>
 
->　　In the last
+>In the last year I hava never had to write a single HLSL/GLSL shader. Bottom line, I can't think of any reason Not to use CG.
 <br>
 
 ### 3.5 本章小结
