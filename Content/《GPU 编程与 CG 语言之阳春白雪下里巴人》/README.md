@@ -2,7 +2,7 @@
 > 这是一本非常不错的入门级 GPU 开发书籍，推荐指数五星，市面上流通的大多是 PDF 格式，不方便阅读，在学习之余将其利用技术手段和人工修正的方式改写成了  Markdown 格式，这样更方便读者阅读。<br>
 原著作者：[康玉之]() <br>
 Markdown 作者：[小萝卜]() <br> 
-WeChatID 作者：[macwink]() <br> 
+WeChatID ：[macwink]() <br> 
 
 ## [第1章 绪论](https://github.com/yungangwang/Study-Notes/blob/master/Content/%E3%80%8AGPU%20%E7%BC%96%E7%A8%8B%E4%B8%8E%20CG%20%E8%AF%AD%E8%A8%80%E4%B9%8B%E9%98%B3%E6%98%A5%E7%99%BD%E9%9B%AA%E4%B8%8B%E9%87%8C%E5%B7%B4%E4%BA%BA%E3%80%8B/%E3%80%8A%E7%AC%AC01%E7%AB%A0%20%20%E7%BB%AA%E8%AE%BA%E3%80%8B.md)
 > ### 1.1 Programmable Graphics Processing Unit 发展历史<br>
