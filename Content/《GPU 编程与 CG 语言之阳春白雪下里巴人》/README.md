@@ -28,13 +28,13 @@ Markdown 作者：[小萝卜]() <br>
 >> #### 2.4.3 Stencil Buffer<br>
 >> #### 2.4.4 Frame Buffer<br>
 >
-> ### 2.5 本章小节<br>
+> ### 2.5 本章小结<br>
 ## [第3章 Shader Language]()
 > ### 3.1 Shader Language 原理<br>
 > ### 3.2 Vertex Shader Program<br>
 > ### 3.3 Fragment Shader Program<br>
 > ### 3.4 CG VS GLSL VS HLSL<br>
-> ### 3.5 本章小节<br>
+> ### 3.5 本章小结<br>
 ## [第4章 CG 语言概述]()
 > ### 4.1 开始 CG 之旅<br>
 > ### 4.2 CG 特性<br>
@@ -101,7 +101,7 @@ Markdown 作者：[小萝卜]() <br>
 >
 > ### 9.4 Blinn-Phong 光照模型<br>
 > ### 9.5 全局光照模型与 Rendering Equation<br>
-> ### 9.6 本章小节<br>
+> ### 9.6 本章小结<br>
 ## [第10章 高级光照模型]()
 > ### 10.1 Cook-Torrance 光照模型<br>
 >
@@ -113,7 +113,7 @@ Markdown 作者：[小萝卜]() <br>
 >> #### 10.2.2 什么是各向异性<br>
 >
 > ### 10.3 Bank BRDF 经典模型<br>
-> ### 10.4 本章小节<br>
+> ### 10.4 本章小结<br>
 ## [第11章 透明光照模型与环境贴图]()
 > ### 11.1 Snell 定律与 Fresnel 定律<br>
 >
@@ -128,7 +128,7 @@ Markdown 作者：[小萝卜]() <br>
 > ### 12.1 投影纹理映射的优点<br>
 > ### 12.2 齐次纹理坐标（Homogeneous Texture Coordinates）<br>
 > ### 12.3 原理与实现流程<br>
-> ### 12.4 本章小节<br>
+> ### 12.4 本章小结<br>
 ## [第13章 Shadow Map]()
 > ### 13.1 什么是 depth map<br>
 > ### 13.2 Shadow Map 与 Shadow Texture 的区别<br>
@@ -157,7 +157,7 @@ Markdown 作者：[小萝卜]() <br>
 >
 > ### 15.3 算法流程<br>
 > ### 15.4 光线投射算法实现<br>
-> ### 15.5 本章小节<br>
+> ### 15.5 本章小结<br>
 > ### 附录 A： 齐次坐标<br>
 > ### 附录 B： 体绘制的医学历程<br>
 > ### 附录 C： 模版阴影（Stencil Shadow）<br>
