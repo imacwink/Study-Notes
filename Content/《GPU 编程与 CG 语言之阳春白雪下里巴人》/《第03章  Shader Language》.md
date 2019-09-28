@@ -77,8 +77,11 @@
 
 　　Shader Language 目前有 3 种主流语言（其实现在更多了，该死的苹果大大对 OpenGL 下手了）：基于 OpenGL 的 GLSL（OpenGL Shading Language，也称为 GLslang），基于 Direct3D 的 HLSL（High Level Shading Language），还有 NVIDIA 公司的 Cg (C for Graphic) 语言。
 <br><br>
-　　GLSL 与 HLSL
-
+　　GLSL 与 HLSL 分别是基于 OpenGL 和 Direct3D 的接口，两者不能混用，事实上 OpenGL 和 Direct3D 一直都是冤家对头，曹操和刘备还有一段和平共处的甜美时光，但是 OpenGL 和 Direct3D 各自的东家则从来都是争斗不休。斗争良久，既然没有分出胜负，那么必然是两败俱伤的局面。
+<br><br>
+　　首先 ATI 系列显卡对 OpenGL 扩展支持不够，例如我在使用 OSG（Open Scene Graphic）开源图形引擎时，由于该引擎完全基于 OpenGL，导致其上编写的 3D 仿真程序在较老的显卡上常常出现纹理无法显示的问题。其次 GLSL 的语法体系自成一家，而 HLSL 和 Cg 语言的语法基本相同，这就意味着，只要学习 HLSL 和 Cg 中任何一种，就等同于学习了两种语言。不过 OpenGL 毕竟是图形 API 曾经的领袖，通常介绍 OpenGL 都会附加上一句 “事实上的工业标准”，所以在其长期发展中积累下的用户群庞大，这些用户当然会选择 GLSL 学习。此外，GLSL 集成了 OpenGL 的良好移植性，一度在 unix 等操作系统上独领风骚（已是曾经的往事）。
+<br><br>
+　　微软的 HLSL 移植性较差，在 Windows 平台上可谓一家独大，可一出自己的院子（还好院子够大），就是落地凤凰不如鸡。这一点在很大程度上限制了 HLSL 的推广和发展。目前 HLSL 多半都是用于游戏领域。我可以负责任的断言，在 Shader Language 领域，HLSL 可以凭借微软的老本称为割据一方的诸侯，但，绝不可能称为君临天下的霸主。这和微软现在的局面很像，就是一个被带刺鲜花簇拥着的大财主，富贵已极，寸步难行。
 <br>
 
 ### 3.5 本章小结
