@@ -51,7 +51,7 @@ WeChat ID：[macwink]() <br>
 > ### 5.3 结构类型<br>
 > ### 5.4 接口（Interfaces）类型<br>
 > ### 5.5 类型转换<br>
-## [第6章 CG 表达式与控制语句]()
+## [第6章 CG 表达式与控制语句](https://github.com/yungangwang/Study-Notes/blob/master/Content/%E3%80%8AGPU%20%E7%BC%96%E7%A8%8B%E4%B8%8E%20CG%20%E8%AF%AD%E8%A8%80%E4%B9%8B%E9%98%B3%E6%98%A5%E7%99%BD%E9%9B%AA%E4%B8%8B%E9%87%8C%E5%B7%B4%E4%BA%BA%E3%80%8B/%E3%80%8A%E7%AC%AC06%E7%AB%A0%20%20CG%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5%E3%80%8B.md)
 > ### 6.1 关系操作符（Comparison Operators）<br>
 > ### 6.2 逻辑操作符（Logical Operators）<br>
 > ### 6.3 数学操作符（Math Operators）<br>
