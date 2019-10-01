@@ -45,7 +45,7 @@ WeChat ID：[macwink]() <br>
 >> #### 4.3.2 CGC 编译命令<br>
 >
 > ### 4.4 Cg Profiles<br>
-## [第5章 CG 数据类型]()
+## [第5章 CG 数据类型](https://github.com/yungangwang/Study-Notes/blob/master/Content/%E3%80%8AGPU%20%E7%BC%96%E7%A8%8B%E4%B8%8E%20CG%20%E8%AF%AD%E8%A8%80%E4%B9%8B%E9%98%B3%E6%98%A5%E7%99%BD%E9%9B%AA%E4%B8%8B%E9%87%8C%E5%B7%B4%E4%BA%BA%E3%80%8B/%E3%80%8A%E7%AC%AC05%E7%AB%A0%20%20CG%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E3%80%8B.md)
 > ### 5.1 基本数据类型<br>
 > ### 5.2 数组类型<br>
 > ### 5.3 结构类型<br>
