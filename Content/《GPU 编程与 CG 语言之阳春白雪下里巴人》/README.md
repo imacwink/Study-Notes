@@ -36,7 +36,7 @@ WeChat ID：[macwink]() <br>
 > ### 3.3 Fragment Shader Program<br>
 > ### 3.4 CG VS GLSL VS HLSL<br>
 > ### 3.5 本章小结<br>
-## [第4章 CG 语言概述]()
+## [第4章 CG 语言概述](https://github.com/yungangwang/Study-Notes/blob/master/Content/%E3%80%8AGPU%20%E7%BC%96%E7%A8%8B%E4%B8%8E%20CG%20%E8%AF%AD%E8%A8%80%E4%B9%8B%E9%98%B3%E6%98%A5%E7%99%BD%E9%9B%AA%E4%B8%8B%E9%87%8C%E5%B7%B4%E4%BA%BA%E3%80%8B/%E3%80%8A%E7%AC%AC04%E7%AB%A0%20%20CG%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0%E3%80%8B.md)
 > ### 4.1 开始 CG 之旅<br>
 > ### 4.2 CG 特性<br>
 > ### 4.3 CG 编译<br>
