@@ -179,6 +179,6 @@ OpenGL ES 2.0
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, 0);
 ```
 
-- 如何绘制如下纹理？这里就附代码，自行研究下。
+- 如何实现如下绘制纹理？这里就不附代码了，自行研究分析下。
 
 <img src="../res/003.jpeg" width="35%" height="35%">
