@@ -14,7 +14,7 @@ OpenGL ES 2.0
 
 #### 效果
 
-![](../res/001.jpeg){:height="50%" width="50%"}
+<img src="../res/001.jpeg" width="50%" height="50%">
 
 #### 步骤
 
