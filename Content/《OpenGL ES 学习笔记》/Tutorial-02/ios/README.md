@@ -27,7 +27,7 @@ OpenGL ES 2.0<br>
 
 - 相对坐标原点的比例变换 A（x，y，z）旋转后变为A'（xSx， ySy， zSz）, Sx, Sy, Sz为缩放因子缩放变换矩阵为
 
-<img src="../res/scale_m.png" width="30%" height="30%">
+<img src="../res/scale_m.png" width="25%" height="25%">
 
 - 点A的矩阵乘以缩放变换矩阵得到旋转后的矩阵为
 
@@ -37,7 +37,7 @@ OpenGL ES 2.0<br>
 
 - 放缩矩阵为
 
-<img src="../res/scale_m_1.png" width="30%" height="30%">
+<img src="../res/scale_m_1.png" width="25%" height="25%">
 
 - 点A的矩阵乘以缩放变换矩阵得到旋转后的矩阵为
 
@@ -51,7 +51,7 @@ OpenGL ES 2.0<br>
 
 - A（x，y，z）旋转后变为A'（xcosθ - ysinθ， xsinθ + ycosθ， z）旋转变换矩阵
 
-<img src="../res/Z.png" width="30%" height="30%">
+<img src="../res/Z.png" width="25%" height="25%">
 
 - 点A的矩阵乘以旋转变换矩阵得到旋转后的矩阵为
 
@@ -61,7 +61,7 @@ OpenGL ES 2.0<br>
 
 - A（x，y，z）旋转后变为A'（xcosθ + zsinθ，y， zcosθ - xsinθ）旋转变换矩阵
 
-<img src="../res/Y.png" width="30%" height="30%">
+<img src="../res/Y.png" width="25%" height="25%">
 
 - 点A的矩阵乘以旋转变换矩阵得到旋转后的矩阵为
 
@@ -71,7 +71,7 @@ OpenGL ES 2.0<br>
 
 - A（x，y，z）旋转后变为A'（x， ycosθ - zsinθ， ysinθ + zcosθ）旋转变换矩阵
 
-<img src="../res/X.png" width="30%" height="30%">
+<img src="../res/X.png" width="25%" height="25%">
 
 - 点A的矩阵乘以旋转变换矩阵得到旋转后的矩阵为
 
@@ -81,7 +81,7 @@ OpenGL ES 2.0<br>
 
 - 平移向量 P 为（tx, ty, tz）， 点 A （x, y, z）平移后变为 A‘（x + tx, y + ty, z + tz）点 A 的矩阵为[x, y, z, 1]，平移变换矩阵为
 
-<img src="../res/postion_m.png" width="30%" height="30%">
+<img src="../res/postion_m.png" width="25%" height="25%">
 
 - 点 A 的矩阵乘以平移变换矩阵得到平移后的矩阵为
 
