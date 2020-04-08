@@ -14,11 +14,8 @@ OpenGL ES 2.0<br>
 
 ## 效果
 
-<img src="../res/001.jpeg" width="35%" height="35%">
-<center class="half">
-<img src="../res/postion.gif" width="25%" height="25%"><img src="../res/scale.gif" width="25%" height="25%">
-<img src="../res/rotation.gif" width="25%" height="25%">
-</center>
+<img src="../res/001.jpeg" width="23%" height="23%"> <img src="../res/postion.gif" width="25%" height="25%"><br>
+<img src="../res/scale.gif" width="25%" height="25%"> <img src="../res/rotation.gif" width="25%" height="25%">
 
 ## 矩阵
 
