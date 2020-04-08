@@ -14,10 +14,8 @@ OpenGL ES 2.0<br>
 
 ### 效果
 
-<img src="../res/001.jpeg" width="35%" height="35%">
-<img src="../res/postion.gif" width="35%" height="35%">
-<img src="../res/scale.gif" width="35%" height="35%">
-<img src="../res/rotation.gif" width="35%" height="35%">
+<img src="../res/001.jpeg" width="35%" height="35%"><img src="../res/postion.gif" width="35%" height="35%">
+<img src="../res/scale.gif" width="35%" height="35%"><img src="../res/rotation.gif" width="35%" height="35%">
 
 ### 矩阵
 
@@ -37,6 +35,11 @@ $$
   \end{matrix} 
 \right]
 $$
+
+ \begin{bmatrix}
+ 1 & 2 \\\
+ 3 &4
+ \end{bmatrix}
 
 - 整体放缩（放缩矩阵为）
 
