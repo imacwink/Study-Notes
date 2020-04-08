@@ -15,7 +15,10 @@ OpenGL ES 2.0<br>
 ## 效果
 
 <img src="../res/001.jpeg" width="35%" height="35%">
-<img src="../res/postion.gif" width="30%" height="30%"><img src="../res/scale.gif" width="30%" height="30%"><img src="../res/rotation.gif" width="30%" height="30%">
+<center class="half">
+<img src="../res/postion.gif" width="25%" height="25%"><img src="../res/scale.gif" width="25%" height="25%">
+<img src="../res/rotation.gif" width="25%" height="25%">
+</center>
 
 ## 矩阵
 
@@ -31,7 +34,7 @@ OpenGL ES 2.0<br>
 
 - 点A的矩阵乘以缩放变换矩阵得到旋转后的矩阵为
 
-<img src="../res/scale_m_mix.png" width="50%" height="50%">
+<img src="../res/scale_m_mix.png" width="70%" height="70%">
 
 ### 整体放缩
 
@@ -41,7 +44,7 @@ OpenGL ES 2.0<br>
 
 - 点A的矩阵乘以缩放变换矩阵得到旋转后的矩阵为
 
-<img src="../res/scale_m_1_mix.png" width="35%" height="35%">
+<img src="../res/scale_m_1_mix.png" width="70%" height="70%">
 
 ### 旋转
 
@@ -55,7 +58,7 @@ OpenGL ES 2.0<br>
 
 - 点A的矩阵乘以旋转变换矩阵得到旋转后的矩阵为
 
-<img src="../res/Z-MIX.png" width="35%" height="35%">
+<img src="../res/Z-MIX.png" width="70%" height="70%">
 
 #### 绕 Y 轴旋转
 
@@ -65,7 +68,7 @@ OpenGL ES 2.0<br>
 
 - 点A的矩阵乘以旋转变换矩阵得到旋转后的矩阵为
 
-<img src="../res/Y-MIX.png" width="35%" height="35%">
+<img src="../res/Y-MIX.png" width="70%" height="70%">
 
 #### 绕 X 轴旋转
 
@@ -75,7 +78,7 @@ OpenGL ES 2.0<br>
 
 - 点A的矩阵乘以旋转变换矩阵得到旋转后的矩阵为
 
-<img src="../res/X-MIX.png" width="35%" height="35%">
+<img src="../res/X-MIX.png" width="70%" height="70%">
 
 ### 平移
 
@@ -85,7 +88,7 @@ OpenGL ES 2.0<br>
 
 - 点 A 的矩阵乘以平移变换矩阵得到平移后的矩阵为
 
-<img src="../res/postion_m_mix.png" width="35%" height="35%">
+<img src="../res/postion_m_mix.png" width="70%" height="70%">
 
 ### 思考
 
