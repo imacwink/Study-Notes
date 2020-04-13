@@ -40,11 +40,11 @@ OpenGL ES 2.0<br>
 
 - 自己在草稿纸上书写了一下顶点变换的整个过程，如下：
 
-    <img src="../res/v-des.jpeg" width="30%" height="30%">
+    <img src="../res/v-des.jpeg" width="30%" height="30%" style="transform:rotate(90deg)">
 
 - 更系统更标准的图 [LearnOpenGL-坐标系统](https://learnopengl-cn.readthedocs.io/zh/latest/01%20Getting%20started/08%20Coordinate%20Systems/)，如下（不做过多概念讲解，请自行查阅）：
 
-    <img src="../res/coordinate_systems.png" width="30%" height="30%">
+    <img src="../res/coordinate_systems.png" width="45%" height="45%">
 
 ### 思考
 >为什么不是 PVM 而是 MVP ？<br>
