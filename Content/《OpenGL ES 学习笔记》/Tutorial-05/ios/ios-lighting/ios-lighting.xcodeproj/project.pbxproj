@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17815CFE244FE70A00E46681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17815CFD244FE70A00E46681 /* AppDelegate.m */; };
+		17815D01244FE70A00E46681 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17815D00244FE70A00E46681 /* SceneDelegate.m */; };
+		17815D04244FE70A00E46681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17815D03244FE70A00E46681 /* ViewController.m */; };
+		17815D07244FE70A00E46681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17815D05244FE70A00E46681 /* Main.storyboard */; };
+		17815D09244FE70C00E46681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17815D08244FE70C00E46681 /* Assets.xcassets */; };
+		17815D0C244FE70C00E46681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17815D0A244FE70C00E46681 /* LaunchScreen.storyboard */; };
+		17815D0F244FE70C00E46681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17815D0E244FE70C00E46681 /* main.m */; };
+		17815D19244FE70C00E46681 /* ios_lightingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17815D18244FE70C00E46681 /* ios_lightingTests.m */; };
+		17815D24244FE70C00E46681 /* ios_lightingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17815D23244FE70C00E46681 /* ios_lightingUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17815D15244FE70C00E46681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17815CF1244FE70A00E46681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17815CF8244FE70A00E46681;
+			remoteInfo = "ios-lighting";
+		};
+		17815D20244FE70C00E46681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17815CF1244FE70A00E46681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17815CF8244FE70A00E46681;
+			remoteInfo = "ios-lighting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17815CF9244FE70A00E46681 /* ios-lighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-lighting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17815CFC244FE70A00E46681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17815CFD244FE70A00E46681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17815CFF244FE70A00E46681 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		17815D00244FE70A00E46681 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		17815D02244FE70A00E46681 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17815D03244FE70A00E46681 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17815D06244FE70A00E46681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17815D08244FE70C00E46681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17815D0B244FE70C00E46681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17815D0D244FE70C00E46681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17815D0E244FE70C00E46681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17815D14244FE70C00E46681 /* ios-lightingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-lightingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17815D18244FE70C00E46681 /* ios_lightingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_lightingTests.m; sourceTree = "<group>"; };
+		17815D1A244FE70C00E46681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17815D1F244FE70C00E46681 /* ios-lightingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-lightingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17815D23244FE70C00E46681 /* ios_lightingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_lightingUITests.m; sourceTree = "<group>"; };
+		17815D25244FE70C00E46681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17815CF6244FE70A00E46681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17815D11244FE70C00E46681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17815D1C244FE70C00E46681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17815CF0244FE70A00E46681 = {
+			isa = PBXGroup;
+			children = (
+				17815CFB244FE70A00E46681 /* ios-lighting */,
+				17815D17244FE70C00E46681 /* ios-lightingTests */,
+				17815D22244FE70C00E46681 /* ios-lightingUITests */,
+				17815CFA244FE70A00E46681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17815CFA244FE70A00E46681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17815CF9244FE70A00E46681 /* ios-lighting.app */,
+				17815D14244FE70C00E46681 /* ios-lightingTests.xctest */,
+				17815D1F244FE70C00E46681 /* ios-lightingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17815CFB244FE70A00E46681 /* ios-lighting */ = {
+			isa = PBXGroup;
+			children = (
+				17815CFC244FE70A00E46681 /* AppDelegate.h */,
+				17815CFD244FE70A00E46681 /* AppDelegate.m */,
+				17815CFF244FE70A00E46681 /* SceneDelegate.h */,
+				17815D00244FE70A00E46681 /* SceneDelegate.m */,
+				17815D02244FE70A00E46681 /* ViewController.h */,
+				17815D03244FE70A00E46681 /* ViewController.m */,
+				17815D05244FE70A00E46681 /* Main.storyboard */,
+				17815D08244FE70C00E46681 /* Assets.xcassets */,
+				17815D0A244FE70C00E46681 /* LaunchScreen.storyboard */,
+				17815D0D244FE70C00E46681 /* Info.plist */,
+				17815D0E244FE70C00E46681 /* main.m */,
+			);
+			path = "ios-lighting";
+			sourceTree = "<group>";
+		};
+		17815D17244FE70C00E46681 /* ios-lightingTests */ = {
+			isa = PBXGroup;
+			children = (
+				17815D18244FE70C00E46681 /* ios_lightingTests.m */,
+				17815D1A244FE70C00E46681 /* Info.plist */,
+			);
+			path = "ios-lightingTests";
+			sourceTree = "<group>";
+		};
+		17815D22244FE70C00E46681 /* ios-lightingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17815D23244FE70C00E46681 /* ios_lightingUITests.m */,
+				17815D25244FE70C00E46681 /* Info.plist */,
+			);
+			path = "ios-lightingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17815CF8244FE70A00E46681 /* ios-lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17815D28244FE70C00E46681 /* Build configuration list for PBXNativeTarget "ios-lighting" */;
+			buildPhases = (
+				17815CF5244FE70A00E46681 /* Sources */,
+				17815CF6244FE70A00E46681 /* Frameworks */,
+				17815CF7244FE70A00E46681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-lighting";
+			productName = "ios-lighting";
+			productReference = 17815CF9244FE70A00E46681 /* ios-lighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17815D13244FE70C00E46681 /* ios-lightingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17815D2B244FE70C00E46681 /* Build configuration list for PBXNativeTarget "ios-lightingTests" */;
+			buildPhases = (
+				17815D10244FE70C00E46681 /* Sources */,
+				17815D11244FE70C00E46681 /* Frameworks */,
+				17815D12244FE70C00E46681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17815D16244FE70C00E46681 /* PBXTargetDependency */,
+			);
+			name = "ios-lightingTests";
+			productName = "ios-lightingTests";
+			productReference = 17815D14244FE70C00E46681 /* ios-lightingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17815D1E244FE70C00E46681 /* ios-lightingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17815D2E244FE70C00E46681 /* Build configuration list for PBXNativeTarget "ios-lightingUITests" */;
+			buildPhases = (
+				17815D1B244FE70C00E46681 /* Sources */,
+				17815D1C244FE70C00E46681 /* Frameworks */,
+				17815D1D244FE70C00E46681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17815D21244FE70C00E46681 /* PBXTargetDependency */,
+			);
+			name = "ios-lightingUITests";
+			productName = "ios-lightingUITests";
+			productReference = 17815D1F244FE70C00E46681 /* ios-lightingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17815CF1244FE70A00E46681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "王云刚";
+				TargetAttributes = {
+					17815CF8244FE70A00E46681 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					17815D13244FE70C00E46681 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 17815CF8244FE70A00E46681;
+					};
+					17815D1E244FE70C00E46681 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 17815CF8244FE70A00E46681;
+					};
+				};
+			};
+			buildConfigurationList = 17815CF4244FE70A00E46681 /* Build configuration list for PBXProject "ios-lighting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17815CF0244FE70A00E46681;
+			productRefGroup = 17815CFA244FE70A00E46681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17815CF8244FE70A00E46681 /* ios-lighting */,
+				17815D13244FE70C00E46681 /* ios-lightingTests */,
+				17815D1E244FE70C00E46681 /* ios-lightingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17815CF7244FE70A00E46681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17815D0C244FE70C00E46681 /* LaunchScreen.storyboard in Resources */,
+				17815D09244FE70C00E46681 /* Assets.xcassets in Resources */,
+				17815D07244FE70A00E46681 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17815D12244FE70C00E46681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17815D1D244FE70C00E46681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17815CF5244FE70A00E46681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17815D04244FE70A00E46681 /* ViewController.m in Sources */,
+				17815CFE244FE70A00E46681 /* AppDelegate.m in Sources */,
+				17815D0F244FE70C00E46681 /* main.m in Sources */,
+				17815D01244FE70A00E46681 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17815D10244FE70C00E46681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17815D19244FE70C00E46681 /* ios_lightingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17815D1B244FE70C00E46681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17815D24244FE70C00E46681 /* ios_lightingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17815D16244FE70C00E46681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17815CF8244FE70A00E46681 /* ios-lighting */;
+			targetProxy = 17815D15244FE70C00E46681 /* PBXContainerItemProxy */;
+		};
+		17815D21244FE70C00E46681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17815CF8244FE70A00E46681 /* ios-lighting */;
+			targetProxy = 17815D20244FE70C00E46681 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17815D05244FE70A00E46681 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17815D06244FE70A00E46681 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17815D0A244FE70C00E46681 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17815D0B244FE70C00E46681 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17815D26244FE70C00E46681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17815D27244FE70C00E46681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17815D29244FE70C00E46681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DRH4X9PX9;
+				INFOPLIST_FILE = "ios-lighting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoneus.ios-lighting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17815D2A244FE70C00E46681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DRH4X9PX9;
+				INFOPLIST_FILE = "ios-lighting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoneus.ios-lighting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17815D2C244FE70C00E46681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DRH4X9PX9;
+				INFOPLIST_FILE = "ios-lightingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoneus.ios-lightingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-lighting.app/ios-lighting";
+			};
+			name = Debug;
+		};
+		17815D2D244FE70C00E46681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DRH4X9PX9;
+				INFOPLIST_FILE = "ios-lightingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoneus.ios-lightingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-lighting.app/ios-lighting";
+			};
+			name = Release;
+		};
+		17815D2F244FE70C00E46681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DRH4X9PX9;
+				INFOPLIST_FILE = "ios-lightingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoneus.ios-lightingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-lighting";
+			};
+			name = Debug;
+		};
+		17815D30244FE70C00E46681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DRH4X9PX9;
+				INFOPLIST_FILE = "ios-lightingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoneus.ios-lightingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-lighting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17815CF4244FE70A00E46681 /* Build configuration list for PBXProject "ios-lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17815D26244FE70C00E46681 /* Debug */,
+				17815D27244FE70C00E46681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17815D28244FE70C00E46681 /* Build configuration list for PBXNativeTarget "ios-lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17815D29244FE70C00E46681 /* Debug */,
+				17815D2A244FE70C00E46681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17815D2B244FE70C00E46681 /* Build configuration list for PBXNativeTarget "ios-lightingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17815D2C244FE70C00E46681 /* Debug */,
+				17815D2D244FE70C00E46681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17815D2E244FE70C00E46681 /* Build configuration list for PBXNativeTarget "ios-lightingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17815D2F244FE70C00E46681 /* Debug */,
+				17815D30244FE70C00E46681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17815CF1244FE70A00E46681 /* Project object */;
+}

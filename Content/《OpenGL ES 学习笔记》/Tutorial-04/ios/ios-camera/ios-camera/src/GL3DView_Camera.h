@@ -1,8 +1,8 @@
 //
-//  CustomButton.h
+//  GL3DView_Camera.h
 //  ios-camera
 //
-//  Created by 王云刚 on 2020/4/21.
+//  Created by 王云刚 on 2020/4/11.
 //  Copyright © 2020 王云刚. All rights reserved.
 //
 //
@@ -21,19 +21,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol CustomButtonDelegate <NSObject>
+@interface GL3DView_Camera : UIView
 
-@optional
-
-- (void)onTouchedLongTime:(UIView *)view;
-
-@end
-
-@interface CustomButton : UIView
-
-@property (weak, nonatomic) id<CustomButtonDelegate> delegate;
-
-- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)content;
+- (instancetype)initWithFrame:(CGRect)frame context:(EAGLContext *)context;
 
 @end
 
