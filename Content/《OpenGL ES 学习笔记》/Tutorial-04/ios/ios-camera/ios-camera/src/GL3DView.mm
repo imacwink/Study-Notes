@@ -395,8 +395,8 @@ static const VertexStruct vertices[] = {
     float radius = 10.0f;
     self.camX = sin(CACurrentMediaTime()) * radius;
     self.camZ = cos(CACurrentMediaTime()) * radius;
-    view = glm::lookAt(_cameraPos, _cameraPos + _cameraFront, _cameraUp);
-//    view = glm::lookAt(glm::vec3(self.camX, 0.0, self.camZ), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0));
+//    view = glm::lookAt(_cameraPos, _cameraPos + _cameraFront, _cameraUp);
+    view = glm::lookAt(glm::vec3(self.camX, 0.0, self.camZ), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0));
     glUniformMatrix4fv(glGetUniformLocation(self.displayProgram, "viewMatrix"), 1, GL_FALSE, glm::value_ptr(view));
 
     dispatch_sync(dispatch_get_global_queue(0, 0), ^{
