@@ -6,10 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4334f77-a4ae-4125-aaf0-7b083a797fdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/stoneus/adr_glsurfaceview/Logic/DrawTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/stoneus/adr_glsurfaceview/Render/GLRender.java" afterDir="false" />
-    </list>
+    <list default="true" id="e4334f77-a4ae-4125-aaf0-7b083a797fdb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +34,11 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/stoneus/adr_glsurfaceview/Logic/DrawTexture.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="427">
-              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+              <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
               <folding>
                 <element signature="e#0#2440#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#2350#2351#0" expanded="true" />
                 <element signature="e#2415#2416#0" expanded="true" />
               </folding>
             </state>
@@ -312,18 +310,6 @@
             <path>
               <item name="adr_glsurfaceview" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="adr_glsurfaceview" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adr_glsurfaceview" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="adr_glsurfaceview" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adr_glsurfaceview" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -346,6 +332,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -439,7 +426,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="23" width="1920" height="978" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
@@ -447,7 +433,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Resources Explorer" order="6" weight="0.32960597" />
       <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.27529287" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="0" />
@@ -646,10 +632,11 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/stoneus/adr_glsurfaceview/Logic/DrawTexture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
-          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+          <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
           <folding>
             <element signature="e#0#2440#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
             <element signature="e#2415#2416#0" expanded="true" />
           </folding>
         </state>
