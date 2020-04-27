@@ -528,7 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DRH4X9PX9;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../src/vendors/glm-source";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../src/vendors/glm-source";
 				INFOPLIST_FILE = "ios-camera/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DRH4X9PX9;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../src/vendors/glm-source";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../src/vendors/glm-source";
 				INFOPLIST_FILE = "ios-camera/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
