@@ -1,5 +1,5 @@
 //
-//  GL3DView_Camera.h
+//  GL3DViewColor.h
 //  ios-camera
 //
 //  Created by 王云刚 on 2020/4/11.
@@ -21,7 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GL3DView_Camera : UIView
+@interface GL3DViewColor : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame context:(EAGLContext *)context;
 

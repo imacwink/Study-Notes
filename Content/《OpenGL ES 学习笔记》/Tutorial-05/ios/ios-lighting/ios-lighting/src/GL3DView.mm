@@ -1,81 +1,33 @@
- 
+//
+//  GL3DView.m
+//  ios-camera
+//
+//  Created by 王云刚 on 2020/4/11.
+//  Copyright © 2020 王云刚. All rights reserved.
+//
+//
+//                 .-~~~~~~~~~-._       _.-~~~~~~~~~-.
+//             __.'              ~.   .~              `.__
+//           .'//                  \./                  \\`.
+//         .'//                     |                     \\`.
+//       .'// .-~"""""""~~~~-._     |     _,-~~~~"""""""~-. \\`.
+//     .'//.-"                 `-.  |  .-'                 "-.\\`.
+//   .'//______.============-..   \ | /   ..-============.______\\`.
+// .'______________________________\|/______________________________`.
+//
 
 #import "GL3DView.h"
-#import <GLKit/GLKit.h>
 #import "GLESUtils.h"
-#import <glm/glm.hpp>
-#import <glm/gtc/matrix_transform.hpp>
-#import <glm/gtc/type_ptr.hpp>
 #import "CustomButton.h"
+#import "GLCamera.h"
 
 #define DEBUG 1 // 便于调试添加 DEBUG;
 
-// 顶点数据结构;
-typedef struct {
-    GLKVector3 positionCoords; // 顶点坐标;
-    GLKVector3 vertexAttribColor; // 顶点颜色;
-    GLKVector2 textureCoords; // 纹理坐标;
-} VertexStruct;
-
-static const VertexStruct vertices[] = {
-    // X轴0.5处的平面;
-    {{0.5f,   -0.5f,   0.5f}, {1,  0,  0}, {0, 0}},
-    {{0.5f,   -0.5f,  -0.5f}, {1,  0,  0}, {0, 1}},
-    {{0.5f,   0.5f,   -0.5f}, {1,  0,  0}, {1, 1}},
-    {{0.5f,   0.5f,   -0.5f}, {1,  0,  0}, {1, 1}},
-    {{0.5f,   0.5f,    0.5f}, {1,  0,  0}, {1, 0}},
-    {{0.5f,   -0.5f,   0.5f}, {1,  0,  0}, {0, 0}},
-
-    // X轴-0.5处的平面;
-    {{-0.5f,  0.5f,   -0.5f}, {-1,  0,  0}, {1, 1}},
-    {{-0.5f,  -0.5f,  -0.5f}, {-1,  0,  0}, {0, 1}},
-    {{-0.5f,  -0.5f,   0.5f}, {-1,  0,  0}, {0, 0}},
-    {{-0.5f,  -0.5f,   0.5f}, {-1,  0,  0}, {0, 0}},
-    {{-0.5f,  0.5f,    0.5f}, {-1,  0,  0}, {1, 0}},
-    {{-0.5f,  0.5f,   -0.5f}, {-1,  0,  0}, {1, 1}},
- 
-    // Y轴0.5处的平面;
-    {{0.5f,   0.5f,   -0.5f}, {0,  1,  0}, {1, 1}},
-    {{-0.5f,  0.5f,   -0.5f}, {0,  1,  0}, {0, 1}},
-    {{-0.5f,  0.5f,   0.5f}, {0,  1,  0}, {0, 0}},
-    {{-0.5f,  0.5f,   0.5f}, {0,  1,  0}, {0, 0}},
-    {{0.5f,   0.5f,   0.5f}, {0,  1,  0}, {1, 0}},
-    {{0.5f,   0.5f,   -0.5f}, {0,  1,  0}, {1, 1}},
-
-    // Y轴-0.5处的平面;
-    {{-0.5f,  -0.5f,  0.5f}, {0,  -1,  0}, {0, 0}},
-    {{-0.5f,  -0.5f,  -0.5f}, {0,  -1,  0}, {0, 1}},
-    {{0.5f,   -0.5f,  -0.5f}, {0,  -1,  0}, {1, 1}},
-    {{0.5f,   -0.5f,  -0.5f}, {0,  -1,  0}, {1, 1}},
-    {{0.5f,   -0.5f,  0.5f}, {0,  -1,  0}, {1, 0}},
-    {{-0.5f,  -0.5f,  0.5f}, {0,  -1,  0}, {0, 0}},
-    
-    // Z轴0.5处的平面;
-    {{-0.5f,   0.5f,  0.5f},  {0,  0,  1}, {0, 0}},
-    {{-0.5f,  -0.5f,  0.5f},  {0,  0,  1}, {0, 1}},
-    {{0.5f,   -0.5f,  0.5f},  {0,  0,  1}, {1, 1}},
-    {{0.5f,   -0.5f,  0.5f},  {0,  0,  1}, {1, 1}},
-    {{0.5f,   0.5f,   0.5f},  {0,  0,  1}, {1, 0}},
-    {{-0.5f,  0.5f,   0.5f},  {0,  0,  1}, {0, 0}},
-
-    // Z轴-0.5处的平面;
-    {{0.5f,   -0.5f,  -0.5f}, {0,  0,  -1}, {1, 1}},
-    {{-0.5f,  -0.5f,  -0.5f}, {0,  0,  -1}, {0, 1}},
-    {{-0.5f,  0.5f,   -0.5f}, {0,  0,  -1}, {0, 0}},
-    {{-0.5f,  0.5f,   -0.5f}, {0,  0,  -1}, {0, 0}},
-    {{0.5f,   0.5f,   -0.5f}, {0,  0,  -1}, {1, 0}},
-    {{0.5f,   -0.5f,  -0.5f},  {0,  0,  -1}, {1, 1}},
-};
-
 @interface GL3DView() <CustomButtonDelegate> {
-    glm::vec3 _cameraPos;
-    glm::vec3 _cameraFront;
-    glm::vec3 _cameraUp;
     GLfloat _deltaTime;   // 当前帧遇上一帧的时间差;
     GLfloat _lastFrame;   // 上一帧的时间;
     CGPoint _originalLocation;
-    GLfloat _yaw;
-    GLfloat _pitch;
+    GLCamera *_glCamera;
 }
 
 @property(nonatomic, strong) EAGLContext *eaglContext;
@@ -85,9 +37,10 @@ static const VertexStruct vertices[] = {
 @property (nonatomic , assign) GLuint frameBuffer;
 @property (nonatomic , assign) GLuint depthBuffer;
 
-@property (nonatomic , assign) float fov;
-@property (nonatomic , assign) float camX;
-@property (nonatomic , assign) float camZ;
+
+@property (nonatomic , assign) GLuint mMatrix;
+@property (nonatomic , assign) GLuint vMatrix;
+@property (nonatomic , assign) GLuint pMatrix;
 
 @end
 
@@ -115,20 +68,21 @@ static const VertexStruct vertices[] = {
         // Shader 处理;
         [self loadShaders];
         
+        self.mMatrix = glGetUniformLocation(self.displayProgram, "modelMatrix");
+        self.vMatrix = glGetUniformLocation(self.displayProgram, "viewMatrix");
+        self.pMatrix = glGetUniformLocation(self.displayProgram, "projectionMatrix");
+        
         // VBO处理;
         [self fillVBO];
 
         // 纹理处理;
         [GLESUtils fillTexture:@"for-test-001.jpeg"];
         
-        // 初始化参数;
-        self.fov = 50.0f;
-        _yaw   = -90.0f;
-        _pitch =   0.0f;
-        
-        _cameraPos = glm::vec3(0.0f, 0.0f,  3.0f);
-        _cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-        _cameraUp = glm::vec3(0.0f, 1.0f,  0.0f);
+        // 创建一个比较搓的相机 PS：和U3D的相机比这可能是一坨屎;
+        _glCamera = [[GLCamera alloc] initWithVectors:glm::vec3(0.0f, 0.0f,  3.0f)
+                                                   up:glm::vec3(0.0f, 1.0f,  0.0f)
+                                                  yaw:-90.0f
+                                                pitch:0.0f];
         
         // 创建调试 UI;
         [self createSliders];
@@ -153,37 +107,26 @@ static const VertexStruct vertices[] = {
 
 - (void)sliderView:(CGRect)rect tag:(NSInteger)iTag {
     // 创建描述标签;
-    UILabel * uiLabel = [[UILabel alloc] initWithFrame:CGRectMake(rect.origin.x - 20, rect.origin.y, 40, 30)];
+    UILabel * uiLabel = [[UILabel alloc] initWithFrame:CGRectMake(rect.origin.x - 25, rect.origin.y, 40, 30)];
     UILabel * uiLabelDes = [[UILabel alloc] initWithFrame:CGRectMake(rect.origin.x + 295 + 10, rect.origin.y, 80, 30)];
     uiLabel.textColor = [UIColor whiteColor];
     uiLabelDes.textColor = [UIColor whiteColor];
     uiLabelDes.tag = iTag + 100;
-    if (1003 == iTag) {
-        uiLabel.text = @"fov";
-        uiLabelDes.text = [NSString stringWithFormat:@"%.2f", self.fov];
-    }
+    uiLabel.text = @"fov";
+    uiLabelDes.text = [NSString stringWithFormat:@"%.2f", 50.0f];
     [self addSubview:uiLabel];
     [self addSubview:uiLabelDes];
     
     // 实例化UISlider，高度对外观没有影响;
     UISlider * uiSlider = [[UISlider alloc] initWithFrame:rect];
     uiSlider.tag = iTag;
+    
+    // 设置Slider的最大值和最小值;
+    uiSlider.maximumValue = 180;
+    uiSlider.minimumValue = 0;
       
-    if (1003 == iTag) {
-        // 设置Slider的最大值和最小值;
-        uiSlider.maximumValue = 180;
-        uiSlider.minimumValue = 0;
-        
-        // 设置Slider的值，thumb会跳到对应的位置;
-        uiSlider.value = self.fov;
-    } else {
-        // 设置Slider的最大值和最小值;
-        uiSlider.maximumValue = 180;
-        uiSlider.minimumValue = -180;
-        
-        // 设置Slider的值，thumb会跳到对应的位置;
-        uiSlider.value = 0;
-    }
+    // 设置Slider的值，thumb会跳到对应的位置;
+    uiSlider.value = 50.0f;
     
     // 添加Slider滑动事件;
     [uiSlider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
@@ -196,10 +139,7 @@ static const VertexStruct vertices[] = {
     UILabel *uiLabel = (UILabel *)[self viewWithTag:(slider.tag + 100)];
     NSString *myString = [NSString stringWithFormat:@"%.2f", slider.value];
     uiLabel.text = myString;
-    
-    if (1003 == slider.tag) {
-        self.fov = slider.value;
-    }
+    [_glCamera processFov:glm::radians(slider.value)];
 }
 
 - (void)createButtons {
@@ -223,15 +163,14 @@ static const VertexStruct vertices[] = {
 }
 
 - (void)onTouchedLongTime:(UIView *)view {
-    GLfloat cameraSpeed = 5.0f * _deltaTime;
     if (10000 == view.tag) {
-        _cameraPos += cameraSpeed * _cameraFront;
+        [_glCamera processMovement:FORWARD deltaTime:_deltaTime];
     } else if (10001 == view.tag) {
-        _cameraPos -= cameraSpeed * _cameraFront;
+         [_glCamera processMovement:BACKWARD deltaTime:_deltaTime];
     } else if (10002 == view.tag) {
-        _cameraPos -= glm::normalize(glm::cross(_cameraFront, _cameraUp)) * cameraSpeed;
+         [_glCamera processMovement:LEFT deltaTime:_deltaTime];
     } else if (10003 == view.tag) {
-        _cameraPos += glm::normalize(glm::cross(_cameraFront, _cameraUp)) * cameraSpeed;
+         [_glCamera processMovement:RIGHT deltaTime:_deltaTime];
     }
 }
 
@@ -243,28 +182,11 @@ static const VertexStruct vertices[] = {
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint currentLocation = [touch locationInView:self];
-    
+
     CGFloat xoffset = currentLocation.x - _originalLocation.x;
     CGFloat yoffset = currentLocation.y - _originalLocation.y;
     
-    GLfloat sensitivity = -0.0025;
-    xoffset *= sensitivity;
-    yoffset *= -sensitivity;
-
-    _yaw   += xoffset;
-    _pitch += yoffset;
-
-    // Make sure that when pitch is out of bounds, screen doesn't get flipped;
-    if (_pitch > 89.0f)
-        _pitch = 89.0f;
-    if (_pitch < -89.0f)
-        _pitch = -89.0f;
-
-    glm::vec3 front;
-    front.x = cos(glm::radians(_yaw)) * cos(glm::radians(_pitch));
-    front.y = sin(glm::radians(_pitch));
-    front.z = sin(glm::radians(_yaw)) * cos(glm::radians(_pitch));
-    _cameraFront = glm::normalize(front);
+    [_glCamera processTouchMovement:xoffset yoffset:yoffset constrainPitch:YES];
 }
 
 #pragma mark - Setup GLView
@@ -348,8 +270,8 @@ static const VertexStruct vertices[] = {
 
 #pragma mark - Process Shader
 - (void)loadShaders {
-    NSString *vertShaderFile = [[NSBundle mainBundle] pathForResource:@"display" ofType:@"vsh"];
-    NSString *fragShaderFile = [[NSBundle mainBundle] pathForResource:@"display" ofType:@"fsh"];
+    NSString *vertShaderFile = [[NSBundle mainBundle] pathForResource:@"display-texture" ofType:@"vsh"];
+    NSString *fragShaderFile = [[NSBundle mainBundle] pathForResource:@"display-texture" ofType:@"fsh"];
     self.displayProgram = [GLESUtils loadProgram:vertShaderFile withFragmentShaderFilepath:fragShaderFile];
 }
 
@@ -372,62 +294,23 @@ static const VertexStruct vertices[] = {
     
     glUseProgram(self.displayProgram); // 链接成功才能使用;
     
-    [self setPerspectiveProjectionMatrix:self.fov at:(width/height) nZ:0.1f fZ:100.0f]; // 设置投影矩阵;
+    // 设置MVP矩阵;
+    glm::mat4 model;
+    model = glm::translate(model, glm::vec3( 0.0f,  0.0f,  0.0f));
+    glUniformMatrix4fv(self.mMatrix, 1, GL_FALSE, glm::value_ptr(model));
     
-    // 设置观察者矩阵;
     glm::mat4 view;
-    float radius = 10.0f;
-    self.camX = sin(CACurrentMediaTime()) * radius;
-    self.camZ = cos(CACurrentMediaTime()) * radius;
-//    view = glm::lookAt(_cameraPos, _cameraPos + _cameraFront, _cameraUp);
-    view = glm::lookAt(glm::vec3(self.camX, 0.0, self.camZ), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0));
-    glUniformMatrix4fv(glGetUniformLocation(self.displayProgram, "viewMatrix"), 1, GL_FALSE, glm::value_ptr(view));
-
-    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
-        glm::vec3 cubePositions[] = {
-            glm::vec3( 0.0f,  0.0f,  0.0f),
-            glm::vec3( 2.0f,  5.0f, -10.0f),
-            glm::vec3(-1.5f, -2.2f, -2.5f),
-            glm::vec3(-3.8f, -2.0f, -9.3f),
-            glm::vec3( 2.4f, -0.4f, -3.5f),
-            glm::vec3(-1.7f,  3.0f, -7.5f),
-            glm::vec3( 1.3f, -2.0f, -2.5f),
-            glm::vec3( 1.5f,  2.0f, -2.5f),
-            glm::vec3( 1.5f,  0.2f, -1.5f),
-            glm::vec3(-1.3f,  1.0f, -1.5f)
-        };
-        
-        for(unsigned int i = 0; i < 10; i++) {
-            glm::mat4 model;
-            model = glm::translate(model, cubePositions[i]);
-            float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-
-            glUniformMatrix4fv(glGetUniformLocation(self.displayProgram, "modelMatrix"), 1, GL_FALSE, glm::value_ptr(model));
-
-            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(VertexStruct));
-        }
-        
-        [self.eaglContext presentRenderbuffer:GL_RENDERBUFFER];
-    });
-}
-
-- (void)setPerspectiveProjectionMatrix:(float)fovy at:(float)aspect  nZ:(float)nearZ  fZ:(float)farZ {
-    GLuint projectionMatrixSlot = glGetUniformLocation(self.displayProgram, "projectionMatrix");
-    glm::mat4 projectionMatrix;
-    projectionMatrix = glm::perspective(glm::radians(fovy), aspect, nearZ, farZ);
-    glUniformMatrix4fv(projectionMatrixSlot, 1, GL_FALSE, glm::value_ptr(projectionMatrix));
-}
-
-- (void)setOrthoProjectionMatrix:(float)left r:(float)right b:(float)bottom t:(float)top nZ:(float)nearZ fZ:(float)farZ {
-    GLuint projectionMatrixSlot = glGetUniformLocation(self.displayProgram, "projectionMatrix");
-    glm::mat4 projectionMatrix;
-    projectionMatrix = glm::ortho(left, right, bottom, top, nearZ, farZ);
-    glUniformMatrix4fv(projectionMatrixSlot, 1, GL_FALSE, glm::value_ptr(projectionMatrix));
-}
-
-- (void)processRotation:(float)fX y:(float)fY z:(float)fZ is3d:(BOOL)is3d {
-
+    view = [_glCamera getViewMatrix];
+    glUniformMatrix4fv(self.vMatrix, 1, GL_FALSE, glm::value_ptr(view));
+    
+    glm::mat4 projection;
+    projection = glm::perspective(_glCamera.fov, width/height, 0.1f, 1000.0f);
+    glUniformMatrix4fv(self.pMatrix, 1, GL_FALSE, glm::value_ptr(projection));
+    
+    // 绘制;
+    glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(VertexStruct));
+    
+    [self.eaglContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
 - (void)drawRect:(CGRect)rect {

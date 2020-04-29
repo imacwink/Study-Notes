@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "GL3DView.h"
-#import "GL3DView_Camera.h"
+#import "GL3DViewColor.h"
 
 @interface ViewController ()
 
@@ -23,8 +22,8 @@
     CGRect glViewFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     EAGLContext* eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
-    GL3DView *gl3DView = [[GL3DView alloc] initWithFrame:glViewFrame context:eaglContext];
-    [self.view addSubview:gl3DView];
+    GL3DViewColor *gl3DViewColor = [[GL3DViewColor alloc] initWithFrame:glViewFrame context:eaglContext];
+    [self.view addSubview:gl3DViewColor];
 }
 
 

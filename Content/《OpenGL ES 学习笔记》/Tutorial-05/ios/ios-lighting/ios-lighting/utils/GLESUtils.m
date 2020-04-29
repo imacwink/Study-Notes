@@ -63,7 +63,7 @@
         if (infoLen > 1) {
             char * infoLog = malloc(sizeof(char) * infoLen);
             glGetShaderInfoLog (shader, infoLen, NULL, infoLog);
-            NSLog(@"Error compiling shader:\n%s\n", infoLog );            
+            NSLog(@"Error compiling shader:\n%s\n", infoLog);            
             
             free(infoLog);
         }
